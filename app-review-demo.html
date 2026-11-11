@@ -17,7 +17,7 @@
       }
 
       main {
-        width: min(960px, calc(100% - 32px));
+        width: min(720px, calc(100% - 32px));
         margin: 48px auto;
       }
 
@@ -36,7 +36,9 @@
       video {
         display: block;
         width: 100%;
-        aspect-ratio: 16 / 9;
+        max-height: 75vh;
+        aspect-ratio: 9 / 16;
+        object-fit: contain;
         background: #000;
         border: 1px solid #d4dbe2;
         border-radius: 6px;
@@ -84,21 +86,21 @@
   <body>
     <main>
       <h1>inclo リモート</h1>
-      <p class="subtitle">Reference Demo - Utonbot Controller 1.0.1 (16)</p>
+      <p class="subtitle">inclo Hardware Demonstration - November 11, 2026</p>
 
       <video controls playsinline preload="metadata">
         <source
-          src="https://github.com/Utonbot/utonbot-app/releases/download/ios-app-review-demo-1.0.1-16/utonbot_app_review_demo.mp4"
-          type='video/mp4; codecs="hvc1"'
+          src="https://github.com/inclo-remote/inclo-app/releases/download/app-review-demo-20261111/inclo_review.mp4"
+          type="video/mp4"
         />
         Your browser does not support video playback.
       </video>
 
       <p class="description">
-        This video shows the initial Bluetooth and Wi-Fi pairing between Utonbot Controller running on a physical iPhone and the designated Utonbot cleaning robot, followed by login, charging status, and an undocking control interaction.
+        This footage shows inclo リモート on a physical iPhone alongside a compatible cleaning robot. It begins with launching the app and shows robot discovery, sign-in, robot operation, and the physical robot responding to commands.
       </p>
       <p class="fallback">
-        If playback does not start, <a href="https://github.com/Utonbot/utonbot-app/releases/download/ios-app-review-demo-1.0.1-16/utonbot_app_review_demo.mp4">open the video file directly</a>.
+        If playback does not start, <a href="https://github.com/inclo-remote/inclo-app/releases/download/app-review-demo-20261111/inclo_review.mp4">open or download the video file directly</a> (MP4, approximately 43 MB, 2 minutes 48 seconds).
       </p>
     </main>
   </body>
